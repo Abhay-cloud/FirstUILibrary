@@ -12,7 +12,7 @@ public class DemoClass extends AppCompatActivity {
 
     public DemoClass(Context context, Activity activity){
         activity.setContentView(R.layout.demolayout);
-        textView = findViewById(R.id.textView1);
+        textView = activity.findViewById(R.id.textView1);
     }
 
     public void changeText(String text){
