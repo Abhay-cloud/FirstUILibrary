@@ -1,5 +1,6 @@
 package com.abhaysapp.myuilibrary;
 
+import android.app.Activity;
 import android.content.Context;
 import android.widget.TextView;
 
@@ -9,8 +10,8 @@ public class DemoClass extends AppCompatActivity {
 
     TextView textView;
 
-    public DemoClass(Context context){
-        setContentView(R.layout.demolayout);
+    public DemoClass(Context context, Activity activity){
+        activity.setContentView(R.layout.demolayout);
         textView = findViewById(R.id.textView1);
     }
 
